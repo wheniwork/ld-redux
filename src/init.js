@@ -1,4 +1,4 @@
-import { initialize as ldClientInitialize } from 'launchdarkly-js-client-sdk';
+import { initialize as ldClientInitialize } from 'ldclient-js';
 import camelCase from 'lodash.camelcase';
 import uuid from 'uuid';
 import ip from 'ip';

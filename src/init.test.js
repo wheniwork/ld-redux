@@ -1,4 +1,4 @@
-jest.mock('launchdarkly-js-client-sdk', () => ({
+jest.mock('ldclient-js', () => ({
   initialize: global.td.function('ldClientPackage.initialize'),
 }));
 
@@ -17,7 +17,7 @@ jest.mock('ua-parser-js', () => () => ({
 
 jest.useFakeTimers();
 
-import ldClientPackage from 'launchdarkly-js-client-sdk';
+import ldClientPackage from 'ldclient-js';
 import td from 'testdouble';
 import ldReduxInit from './init';
 
